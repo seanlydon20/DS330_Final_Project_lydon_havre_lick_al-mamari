@@ -7,7 +7,8 @@ st.set_page_config(layout="wide")
 # -------------------------
 # LOAD + CLEAN DATA
 # -------------------------
-df = pd.read_csv("~/Downloads/dult_income.csv")
+
+df = pd.read_csv("adult_income.csv")
 df.columns = df.columns.str.strip().str.lower()
 
 for col in df.select_dtypes(include='object').columns:
